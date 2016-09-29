@@ -36,6 +36,18 @@
       "platform": "ios",
       "version": "",
       "locator": "ios"
+    },
+    "android",
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    },
+    "browser",
+    {
+      "platform": "browser",
+      "version": "",
+      "locator": "browser"
     }
   ],
   "description": "gssi-client: An Ionic project"

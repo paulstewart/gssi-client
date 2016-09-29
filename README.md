@@ -46,6 +46,12 @@ Change directory into this project root, then install the node modules
 npm install
 ```
 
+Create a 'www' directory if it doesn't exist (required for cordova build steps)
+
+```
+mkdir www
+```
+
 Then reset the project state
 
 ```
@@ -59,3 +65,37 @@ ionic build browser
 ```
 
 The webroot for the project after building can be found at platforms/browser/www
+
+Use symlink or vhosts to make it the webroot
+
+
+# Updates
+
+Once the project is installed and running, updates are likely to be made.  Code changes
+should be pushed to this git repo.
+
+(Remember when installing plugins to use the --save flag or add them to package.json)
+
+To deploy new changes, pull from the git repo:
+
+```
+git pull origin master
+```
+
+If there are any new node dependencies (or you're not sure)
+
+```
+npm install
+```
+
+If there are any new cordova plugins (or you're not sure)
+
+```
+ionic state reset
+```
+
+Deploy the new system
+
+```
+ionic build browser
+```
