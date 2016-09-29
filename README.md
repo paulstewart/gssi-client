@@ -21,6 +21,8 @@ Then use nvm to install the exact version of node you want.
 ```
 nvm install 5.12.0
 
+nvm ls  (list installed versions)
+
 nvm use 5.12.0
 ```
 
