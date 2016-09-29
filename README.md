@@ -26,16 +26,24 @@ nvm ls  (list installed versions)
 nvm use 5.12.0
 ```
 
-Change directory into this project root, then install the node modules
-
-```
-npm install
-```
+Change to the root project directory
 
 If ionic isn't installed, install that
 
 ```
 npm install -g ionic
+```
+
+If cordova isn't installed, install that
+
+```
+npm install -g cordova
+```
+
+Change directory into this project root, then install the node modules
+
+```
+npm install
 ```
 
 Then reset the project state
@@ -44,7 +52,6 @@ Then reset the project state
 ionic state reset
 ```
 
-Create the www directory in root if it doesn't exist
 Build for the browser
 
 ```
