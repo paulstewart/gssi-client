@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>{{ 'home-title' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -19,7 +19,12 @@
     Follow along on the tutorial section of the Ionic docs!
   </p>
   <p>
+      Translation: {{ 'test' | translate }}
+  </p>
+  <p>
     <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    
+    <button ion-button color="primary" (click)="callElgg()">Call Elgg</button>
   </p>
 
 </ion-content>
