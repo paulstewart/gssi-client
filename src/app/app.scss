@@ -14,3 +14,34 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+// center and condense for super-wide screens
+.app-wrapper {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ion-header {
+    .toolbar-background {
+        background-color: map-get($colors, primary);
+    }
+    
+    .toolbar-title {
+        color: map-get($colors, light);
+    }
+    
+    button.back-button,
+    button.back-button:hover:not(.disable-hover) {
+        color: map-get($colors, light);
+    }
+    
+    button.bar-button-menutoggle,
+    button.bar-button-menutoggle:hover:not(.disable-hover) {
+        color: map-get($colors, light);
+    }
+}
