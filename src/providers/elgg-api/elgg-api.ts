@@ -11,6 +11,7 @@ import {Http, Headers} from '@angular/http';
 import {Platform, Events} from 'ionic-angular';
 import Moment from 'moment';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/timeout';
 import CryptoJS from 'crypto-js';
 import {ConnectivityService} from '../../providers/connectivity-service/connectivity-service';
 
@@ -37,12 +38,15 @@ export class ElggAPI {
 		  ) {
 
 	  // set our keys based on the OS type
-	  this.pubkey = this.ios_pubkey;
-	  this.secret = this.ios_secret;
 	  this.platform.ready().then(() => {
                 if (this.platform.is('android')) {
 //	    	  this.pubkey = this.android_pubkey;
 //	    	  this.secret = this.android_secret;
+                }
+                
+                if (this.platform.is('ios')) {
+//                    this.pubkey = this.ios_pubkey;
+//                    this.secret = this.ios_secret;
                 }
 	  });
 

@@ -8,6 +8,9 @@ import { ListPage } from '../pages/list/list';
 import {ConnectivityService} from '../providers/connectivity-service/connectivity-service';
 import { ElggAPI } from '../providers/elgg-api/elgg-api';
 
+//import { PDFDocument } from 'pdfkit';
+//import { pdfMake } from 'pdfmake';
+
 // translations
 import {HttpModule, Http} from '@angular/http';
 import {TranslateModule } from 'ng2-translate/ng2-translate';
