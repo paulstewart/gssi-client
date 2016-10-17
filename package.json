@@ -20,7 +20,8 @@
     "ionic-native": "^2.0.3",
     "ionicons": "^3.0.0",
     "moment": "^2.15.1",
-    "pdfmake": "^0.1.18"
+    "pdfmake": "^0.1.18",
+    "ng2-translate": "^3.1.0"
   },
   "devDependencies": {
     "@ionic/app-scripts": "^0.0.23",
